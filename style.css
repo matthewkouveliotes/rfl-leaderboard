@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    font-family: "Kanit", "serif";
+    background-color: #482c6e;
+    color: #eff5e6;
+}
+
+#title {
+    text-align: center;
+}
+
+.scroll-container {
+    width: 50%;
+    height: 70%;
+
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: #333;
+}
+.scrollable-list {
+    bottom:50px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.scrollable-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    text-align: center;
+}
