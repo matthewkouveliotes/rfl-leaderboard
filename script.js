@@ -35,7 +35,7 @@ const handleRoster = (sheetData) => {
 
 const handleResponses = (sheetData) => {
     for(const c of sheetData) {
-        var recruiter = c["Were you recruited by a current club member? If so, what is their name?\n\n(FirstName, LastName) - Exactly as it appears in the Club Roster"];
+        var recruiter = c["Were you recruited by a current club member? If so, what is their name?\n\n(FirstName, LastName) - Exactly as it appears in the Club Roster"].trim();
         var registrar = c["Name\n\nFirst Name, Last Name\n(Please remember to place a comma and a space between your first and last name!)"];
         if(recruiter === "") continue;
         if(recruiter === registrar) continue;
