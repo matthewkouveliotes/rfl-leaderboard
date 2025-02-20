@@ -48,7 +48,10 @@ const handleResponses = (sheetData) => {
     const numRecruits = [];
 
     for(const [name, num] of rosterMap) {
-        recruiters.push(name);
+        var spaceIndex = name.indexOf(" ");
+        var shortName = name.substring(0, spaceIndex-1) + " " + name.substring(spaceIndex + 1, spaceIndex + 2) + ".";
+
+        recruiters.push(shortName);
         numRecruits.push(num);
     }
 
