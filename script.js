@@ -72,17 +72,11 @@ const handleResponses = (sheetData) => {
         numRecruits[minIndex] = tempNum;
     }
     for(var i = 0; i < recruiters.length; i++) {
-        document.getElementById("rosterList").innerHTML += "<li>" + recruiters[i] + " <br> " + numRecruits[i] + "</li>";
+        document.getElementById("rosterList").innerHTML += "<li>" + "<b>" + (i+1) + ". </b>" + recruiters[i] + " <br> " + numRecruits[i] + "</li>";
     }
 
 };
 
 
-  // --==== QUERY EXAMPLES ====--
-  // --==== USE LETTERS FOR COLUMN NAMES ====--
-  //  'SELECT A,C,D WHERE D > 150'
-  //  'SELECT * WHERE B = "Potato"'
-  //  'SELECT * WHERE A contains "Jo"'
-  //  'SELECT * WHERE C = "active" AND B contains "Jo"'
-  //  "SELECT * WHERE E > date '2022-07-9' ORDER BY E DESC"
+
 
